@@ -1,4 +1,4 @@
-package com.example.saldoplusv1.db;
+package com.example.saldoplusv1.data;
 
 import android.content.ContentValues;
 import android.content.Context;

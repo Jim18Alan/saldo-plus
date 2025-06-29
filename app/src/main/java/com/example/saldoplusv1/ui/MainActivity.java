@@ -1,7 +1,6 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,10 +11,10 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.databinding.ActivityMainBinding;
 import com.example.saldoplusv1.repositories.RepositorioUsuario;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 

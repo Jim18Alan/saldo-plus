@@ -1,4 +1,4 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.databinding.FragmentDashboardBinding;
 
 import com.example.saldoplusv1.models.ImpactoFinanciero;
@@ -28,7 +29,6 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;

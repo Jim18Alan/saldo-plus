@@ -1,4 +1,4 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.helpers;
 
 import android.graphics.Bitmap;
 import android.util.Base64;

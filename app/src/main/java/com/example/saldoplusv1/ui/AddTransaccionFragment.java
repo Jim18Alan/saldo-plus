@@ -1,4 +1,4 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -15,7 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.example.saldoplusv1.databinding.FragmentAddTransaccionBinding;
-import com.example.saldoplusv1.db.SQLiteHelper;
+import com.example.saldoplusv1.data.SQLiteHelper;
 import com.example.saldoplusv1.helpers.TransaccionHelper;
 import com.example.saldoplusv1.models.Apartado;
 import com.example.saldoplusv1.models.Categoria;

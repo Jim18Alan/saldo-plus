@@ -2,7 +2,7 @@ package com.example.saldoplusv1.repositories;
 
 import android.content.Context;
 
-import com.example.saldoplusv1.db.SQLiteHelper;
+import com.example.saldoplusv1.data.SQLiteHelper;
 
 public class RepositorioSQLite {
     private final RepositorioTransaccion repoTransaccion;

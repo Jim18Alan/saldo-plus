@@ -1,4 +1,4 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 
 import android.Manifest;
@@ -29,6 +29,8 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.saldoplusv1.helpers.OpenAIHelper;
+import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.adapters.TransaccionAdapter;
 import com.example.saldoplusv1.databinding.FragmentFotoBinding;
 import com.example.saldoplusv1.databinding.SheetTransaccionesTemporalesBinding;

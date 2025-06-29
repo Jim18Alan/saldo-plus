@@ -1,4 +1,4 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 import android.os.Bundle;
 

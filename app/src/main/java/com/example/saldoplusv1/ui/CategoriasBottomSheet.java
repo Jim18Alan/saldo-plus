@@ -1,4 +1,4 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 import android.app.AlertDialog;
 import android.graphics.Color;
@@ -10,8 +10,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.adapters.CategoriaAdapter;
-import com.example.saldoplusv1.db.SQLiteHelper;
+import com.example.saldoplusv1.data.SQLiteHelper;
 import com.example.saldoplusv1.models.Apartado;
 import com.example.saldoplusv1.models.Categoria;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;

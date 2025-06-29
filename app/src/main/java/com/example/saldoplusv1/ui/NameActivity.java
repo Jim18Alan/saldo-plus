@@ -1,9 +1,8 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -16,6 +15,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.models.Usuario;
 import com.example.saldoplusv1.repositories.RepositorioUsuario;
 import com.google.android.material.appbar.MaterialToolbar;

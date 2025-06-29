@@ -1,6 +1,5 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
-import android.app.DatePickerDialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,6 +16,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 
+import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.adapters.TransaccionAdapter;
 import com.example.saldoplusv1.databinding.FragmentTransaccionesBinding;
 import com.example.saldoplusv1.models.Apartado;
@@ -32,7 +32,6 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;

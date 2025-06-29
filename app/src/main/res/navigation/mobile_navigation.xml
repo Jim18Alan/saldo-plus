@@ -8,7 +8,7 @@ app:startDestination="@+id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.saldoplusv1.DashboardFragment"
+        android:name="com.example.saldoplusv1.ui.DashboardFragment"
         android:label="Resumen mensual"
         tools:layout="@layout/fragment_dashboard" >
 
@@ -20,37 +20,37 @@ app:startDestination="@+id/nav_home">
 
     <fragment
         android:id="@+id/nav_movs"
-        android:name="com.example.saldoplusv1.TransaccionesFragment"
+        android:name="com.example.saldoplusv1.ui.TransaccionesFragment"
         android:label="Movimientos del mes"
         tools:layout="@layout/fragment_transacciones" />
 
     <fragment
         android:id="@+id/nav_add"
-        android:name="com.example.saldoplusv1.AddTransaccionFragment"
+        android:name="com.example.saldoplusv1.ui.AddTransaccionFragment"
         android:label="Agregar movimiento"
         tools:layout="@layout/fragment_add_transaccion" />
 
     <fragment
         android:id="@+id/nav_scan"
-        android:name="com.example.saldoplusv1.FotoFragment"
+        android:name="com.example.saldoplusv1.ui.FotoFragment"
         android:label="Escanear tiked"
         tools:layout="@layout/fragment_foto"/>
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.saldoplusv1.ConfiguracionFragment"
+        android:name="com.example.saldoplusv1.ui.ConfiguracionFragment"
         android:label="Configuración"
         tools:layout="@layout/fragment_configuracion" />
 
     <fragment
         android:id="@+id/nav_apartado"
-        android:name="com.example.saldoplusv1.ApartadosFragment"
+        android:name="com.example.saldoplusv1.ui.ApartadosFragment"
         android:label="Categorias"
         tools:layout="@layout/fragment_apartados" />
 
     <fragment
         android:id="@+id/nav_history"
-        android:name="com.example.saldoplusv1.MonthHistoryFragment"
+        android:name="com.example.saldoplusv1.ui.MonthHistoryFragment"
         android:label="Historial de movimientos"
         tools:layout="@layout/fragment_month_history" />
 

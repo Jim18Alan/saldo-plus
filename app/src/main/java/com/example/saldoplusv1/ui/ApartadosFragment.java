@@ -1,4 +1,4 @@
-package com.example.saldoplusv1;
+package com.example.saldoplusv1.ui;
 
 import android.app.AlertDialog;
 import android.graphics.Color;
@@ -16,13 +16,13 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
+import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.adapters.ApartadoAdapter;
 import com.example.saldoplusv1.databinding.FragmentApartadosBinding;
-import com.example.saldoplusv1.db.SQLiteHelper;
+import com.example.saldoplusv1.data.SQLiteHelper;
 import com.example.saldoplusv1.models.Apartado;
 import com.example.saldoplusv1.models.ImpactoFinanciero;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
