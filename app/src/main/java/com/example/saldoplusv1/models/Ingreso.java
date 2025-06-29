@@ -1,33 +1,37 @@
 package com.example.saldoplusv1.models;
 
-import java.util.Date;
+/**
+ * REPRESENTA: Un movimiento específico de tipo Ingreso.
+ * RELACIÓN DE HERENCIA: Esta clase 'extiende' (hereda) de la clase Movimiento.
+ * Esto significa que un Ingreso "ES UN" Movimiento y automáticamente
+ * posee todos sus atributos (id, monto, etc.) y métodos.
+ */
+public class Ingreso extends Movimiento {
 
-public class Ingreso {
-
-        /*extends Movimiento {
-
-    protected double datoEjemplo;
-
-    // Constructor principal
-    public Ingreso(long id, double monto, Date fecha, String descripcion, Categoria categoria) {
-        super(id, monto, fecha, descripcion, categoria);
+    /**
+     * CONSTRUCTOR: Se utiliza para crear (instanciar) un nuevo objeto de tipo Ingreso.
+     * USO DE 'super()': La primera línea 'super(...)' es una llamada obligatoria al constructor de la clase padre (Movimiento).
+     * Le pasa los valores para que la superclase inicialice sus propios atributos.
+     *
+     * @param id          Parámetro para el identificador único del ingreso.
+     * @param monto       Parámetro para la cantidad monetaria del ingreso.
+     * @param fecha       Parámetro para la fecha en que se recibió el ingreso.
+     * @param descripcion Parámetro para el texto descriptivo del ingreso (ej: "Salario Quincenal").
+     */
+    public Ingreso(long id, double monto, String fecha, String descripcion) {
+        // INVOCACIÓN AL CONSTRUCTOR PADRE: Se llama al constructor de Movimiento para inicializar los atributos heredados.
+        super(id, monto, fecha, descripcion);
     }
 
-    // Sobrecarga de constructor (por ejemplo, sin fecha, usa la fecha actual)
-    public Ingreso(long id, double monto, String descripcion, Categoria categoria) {
-        super(id, monto, new Date(), descripcion, categoria);
-    }
-
-    // Sobrecarga de método set (por ejemplo, acepta int y lo convierte a double)
-    public void setdatoEjemplo(int datoEjemplo) {
-        this.datoEjemplo = (double) datoEjemplo;
-    }
-
-    public double getdatoEjemplo() { return datoEjemplo; }
-    public void setdatoEjemplo(double datoEjemplo) { this.datoEjemplo = datoEjemplo; }
-
+    /**
+     * MÉTODO SOBRESCRITO: Implementación del método abstracto 'getTipo()' heredado de Movimiento.
+     * USO DE '@Override': Esta anotación le indica al compilador que estamos sobrescribiendo un método
+     * de la clase padre. Ayuda a prevenir errores.
+     * PROPOSITO: Define que cualquier objeto de esta clase es de tipo "Ingreso".
+     * @return La cadena de texto fija "Ingreso".
+     */
     @Override
-    public boolean esIngreso() {
-        return true;
-    }*/
+    public String getTipo() {
+        return "Ingreso";
+    }
 }

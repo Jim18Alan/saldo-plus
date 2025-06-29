@@ -3,7 +3,6 @@ package com.example.saldoplusv1.helpers;
 import android.content.Context;
 
 import com.example.saldoplusv1.models.Apartado;
-import com.example.saldoplusv1.models.Categoria;
 import com.example.saldoplusv1.models.Movimiento;
 import com.example.saldoplusv1.repositories.RepositorioTransaccion;
 

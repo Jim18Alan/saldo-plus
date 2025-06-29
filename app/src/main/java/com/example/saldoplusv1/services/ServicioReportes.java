@@ -1,6 +1,5 @@
 package com.example.saldoplusv1.services;
 
-import com.example.saldoplusv1.models.Categoria;
 import com.example.saldoplusv1.models.Transaccion;
 import com.example.saldoplusv1.repositories.RepositorioTransaccion;
 

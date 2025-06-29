@@ -20,7 +20,6 @@ import com.example.saldoplusv1.R;
 import com.example.saldoplusv1.adapters.TransaccionAdapter;
 import com.example.saldoplusv1.databinding.FragmentTransaccionesBinding;
 import com.example.saldoplusv1.models.Apartado;
-import com.example.saldoplusv1.models.Categoria;
 import com.example.saldoplusv1.models.Transaccion;
 import com.example.saldoplusv1.repositories.RepositorioSQLite;
 import com.google.android.material.bottomsheet.BottomSheetDialog;

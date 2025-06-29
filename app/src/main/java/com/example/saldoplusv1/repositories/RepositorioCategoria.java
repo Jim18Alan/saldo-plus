@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.saldoplusv1.data.SQLiteHelper;
-import com.example.saldoplusv1.models.Categoria;
 
 import java.util.ArrayList;
 import java.util.List;

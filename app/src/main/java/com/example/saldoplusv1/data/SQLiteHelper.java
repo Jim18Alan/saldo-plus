@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.saldoplusv1.models.Apartado;
-import com.example.saldoplusv1.models.Categoria;
 import com.example.saldoplusv1.models.ImpactoFinanciero;
 
 import java.util.ArrayList;

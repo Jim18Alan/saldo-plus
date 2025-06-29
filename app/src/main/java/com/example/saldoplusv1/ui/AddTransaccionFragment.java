@@ -18,7 +18,6 @@ import com.example.saldoplusv1.databinding.FragmentAddTransaccionBinding;
 import com.example.saldoplusv1.data.SQLiteHelper;
 import com.example.saldoplusv1.helpers.TransaccionHelper;
 import com.example.saldoplusv1.models.Apartado;
-import com.example.saldoplusv1.models.Categoria;
 import com.example.saldoplusv1.models.ImpactoFinanciero;
 import com.google.android.material.datepicker.MaterialDatePicker;
 

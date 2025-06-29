@@ -11,10 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.saldoplusv1.R;
-import com.example.saldoplusv1.adapters.CategoriaAdapter;
 import com.example.saldoplusv1.data.SQLiteHelper;
 import com.example.saldoplusv1.models.Apartado;
-import com.example.saldoplusv1.models.Categoria;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.button.MaterialButton;
 

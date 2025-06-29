@@ -7,7 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.saldoplusv1.data.SQLiteHelper;
 import com.example.saldoplusv1.models.Apartado;
-import com.example.saldoplusv1.models.Categoria;
 import com.example.saldoplusv1.models.ImpactoFinanciero;
 import com.example.saldoplusv1.models.Movimiento;
 import com.example.saldoplusv1.models.Transaccion;
