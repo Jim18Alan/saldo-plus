@@ -1,70 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="12dp"
-    android:orientation="horizontal"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center_vertical"
-    android:background="@drawable/card_background"
-    android:layout_marginBottom="16dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
 
-    <ImageView
-        android:id="@+id/icon_tipo"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_arrow_downward"
-        app:tint="#F4C987" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
 
-    <LinearLayout
-        android:layout_marginStart="12dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_icono_categoria"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_money"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/text_descripcion"
-            android:text="ejemplo"
+            android:id="@+id/item_texto_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
             android:textStyle="bold"
+            android:textColor="@android:color/black"
             android:textSize="16sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            app:layout_constraintStart_toEndOf="@id/item_icono_categoria"
+            app:layout_constraintEnd_toStartOf="@id/item_texto_monto"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Compra de despensa" />
 
         <TextView
-            android:id="@+id/text_categoria"
-            android:text="Transporte"
-            android:textColor="#888888"
+            android:id="@+id/item_texto_categoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
             android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/item_texto_descripcion"
+            app:layout_constraintTop_toBottomOf="@id/item_texto_descripcion"
+            tools:text="Comida" />
+
+        <TextView
+            android:id="@+id/item_texto_monto"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="end">
-
-        <TextView
-            android:id="@+id/text_monto"
-            android:text="-$10.00"
-            android:textColor="#C62828"
-            android:textStyle="bold"
+            android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="+ $1,500.00"
+            tools:textColor="@color/color_verde_ingreso" />
 
-        <TextView
-            android:id="@+id/text_fecha"
-            android:text="30 abr 2025"
-            android:textSize="12sp"
-            android:textColor="#888888"
-            android:layout_height="wrap_content" android:layout_width="wrap_content"/>
-    </LinearLayout>
-    <CheckBox
-        android:id="@+id/checkboxSeleccion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
-        android:visibility="gone"/>
-</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
