@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="12dp"
+    app:strokeColor="@color/primaryContainer"
+    app:strokeWidth="1dp"
+    android:backgroundTint="@color/surfaceContainerHighest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <!-- Título Expresivo -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✨ Crear Apartado"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/onSurface"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tipo con dropdown expresivo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_type_layout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo de apartado"
+            app:startIconDrawable="@drawable/ic_category"
+            android:layout_marginBottom="20dp"
+            app:boxBackgroundColor="@color/surfaceContainer"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/input_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:background="@null"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:textColor="@color/onSurface" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Nombre -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del apartado"
+            android:layout_marginBottom="24dp"
+            app:startIconDrawable="@drawable/ic_label"
+            app:boxBackgroundColor="@color/surfaceContainer"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                android:textColor="@color/onSurface" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botón Guardar expresivo -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/onPrimary"
+            android:backgroundTint="@color/primary"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/ic_save"
+            app:iconTint="@color/onPrimary"
+            app:iconPadding="12dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

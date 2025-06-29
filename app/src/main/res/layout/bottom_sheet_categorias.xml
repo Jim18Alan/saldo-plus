@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootCategorias"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Título dinámico -->
+    <TextView
+        android:id="@+id/textTituloCategorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categorías"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Recycler de categorías -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Placeholder si no hay categorías -->
+    <TextView
+        android:id="@+id/textSinCategorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No hay categorías aún"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Botón para agregar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAgregarCategoria"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar categoría"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

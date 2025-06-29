@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#10b981</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#FFFFFF</color>
+    <color name="surfaceContainer">#F3EDF7</color>
+    <color name="surfaceContainerHighest">#FFFFFF</color>
+    <color name="onSurface">#1C1B1F</color>
+
+    <color name="chip_checked_background">#10b981</color>
+    <color name="chip_unchecked_background">@color/surfaceContainer</color>
+    <color name="chip_checked_text">@color/onPrimary</color>
+    <color name="chip_unchecked_text">@color/onSurface</color>
+    <color name="chip_border">#10b981</color> <!-- Puede ser gris claro -->
+
+
+</resources>

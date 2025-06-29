@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/mobile_navigation"
+app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.saldoplusv1.DashboardFragment"
+        android:label="Resumen mensual"
+        tools:layout="@layout/fragment_dashboard" >
+
+        <!-- Acción para navegar a AddTransaccionFragment -->
+        <action
+            android:id="@+id/action_home_to_add"
+            app:destination="@id/nav_add" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_movs"
+        android:name="com.example.saldoplusv1.TransaccionesFragment"
+        android:label="Movimientos del mes"
+        tools:layout="@layout/fragment_transacciones" />
+
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.example.saldoplusv1.AddTransaccionFragment"
+        android:label="Agregar movimiento"
+        tools:layout="@layout/fragment_add_transaccion" />
+
+    <fragment
+        android:id="@+id/nav_scan"
+        android:name="com.example.saldoplusv1.FotoFragment"
+        android:label="Escanear tiked"
+        tools:layout="@layout/fragment_foto"/>
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.saldoplusv1.ConfiguracionFragment"
+        android:label="Configuración"
+        tools:layout="@layout/fragment_configuracion" />
+
+    <fragment
+        android:id="@+id/nav_apartado"
+        android:name="com.example.saldoplusv1.ApartadosFragment"
+        android:label="Categorias"
+        tools:layout="@layout/fragment_apartados" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.saldoplusv1.MonthHistoryFragment"
+        android:label="Historial de movimientos"
+        tools:layout="@layout/fragment_month_history" />
+
+</navigation>
+
